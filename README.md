@@ -3,8 +3,8 @@
 Solidity Cheat Sheet [Solidity Website](https://docs.soliditylang.org/).
 
 ## First Steps
-- When creating a smart contract developers should include licence. `Solidty Standard`
-- Next is to include 'pragma' it enables certain compiler features or checks. Also include solidty version
+- When creating a smart contract developers should include a licence. `Solidity Standard`
+- Next is to include 'pragma' which enables certain compiler features or checks. Also, include solidity version
 
 ```Solidity
 // SPDX-License-Identifier: MIT
@@ -18,6 +18,19 @@ contract SimpleContract {
 
 "State variables are variables whose values are permanently stored in contract storage." - Soliditylang.org
 
+## Variables 
+
+`State variables are variables whose values are permanently stored in contract storage.`
+
+Below are some common variable types used in Solidity:
+
+```Solidity
+string myString;
+address public myAddress; 
+uint 
+uint256
+
+```
 
 ##  Function visibility Keywords
 
@@ -31,28 +44,26 @@ https://solidity-by-example.org/visibility/
 ```Solidity
 function privateFunc() private pure returns (uint) {
 }
-function privateFunc() public pure returns (uint) {
+function publicFunc() public pure returns (uint) {
 }
-function privateFunc() internal pure returns (uint) {
+function internalFunc() internal pure returns (uint) {
 }
-function privateFunc() external pure returns (uint) {
+function externalFunc() external pure returns (uint) {
 }
 ```
 
-## Variables 
+## constructor
 
-`State variables are variables whose values are permanently stored in contract storage.`
-
-Below are some common variable types used in Solidty:
-
-```Solidity
-string myString;
-address public myAddress; 
-unit
-uint256
-
-```
+Constructor example [Constructor](https://github.com/AMalikBlock/LearningSolidity/blob/main/4_exampleConstructor.sol).
 
 ## Address
 
-Using the (address) variable this will be a common variable developers will use in bloackchain development. 
+Using the (address) variable this will be a common variable developer will use in blockchain development. 
+
+There are two types of `address` types
+
+- `address` holds a 20-byte value ETH address (e.g. 0xaf85da3254b169d3AA09996ea60DD2f12ee2b0fD or 0x000....)
+- `address payable` same as the address but with added members `.transfer`, `.send`
+
+> Note if planning to send ETH include `payable`
+
