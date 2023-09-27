@@ -32,7 +32,7 @@ uint256
 
 ```
 
-##  Function visibility Keywords
+##  Function Visibility Keywords
 
 https://solidity-by-example.org/visibility/
 
@@ -52,7 +52,7 @@ function externalFunc() external pure returns (uint) {
 }
 ```
 
-## constructor
+## Constructor
 
 Constructor example [Constructor](https://github.com/AMalikBlock/LearningSolidity/blob/main/4_exampleConstructor.sol).
 
@@ -66,4 +66,10 @@ There are two types of `address` types
 - `address payable` same as the address but with added members `.transfer`, `.send`
 
 > Note if planning to send ETH include `payable`
+
+## Block and Transaction Properties
+
+msg.sender
+
+msg.sender example [msg.sender](https://github.com/AMalikBlock/LearningSolidity/blob/main/5_exampleMsgSender.sol).
 
