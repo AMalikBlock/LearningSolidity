@@ -65,7 +65,7 @@ There are two types of `address` types
 - `address` holds a 20-byte value ETH address (e.g. 0xaf85da3254b169d3AA09996ea60DD2f12ee2b0fD or 0x000....)
 - `address payable` same as the address but with added members `.transfer`, `.send`
 
-> Note if planning to send ETH include `payable`
+> Note if planning to send ETH include `payable` (modifier)
 
 ## Block and Transaction Properties
 
@@ -73,3 +73,10 @@ msg.sender
 
 msg.sender example [msg.sender](https://github.com/AMalikBlock/LearningSolidity/blob/main/5_exampleMsgSender.sol).
 
+
+
+## Modifiers
+
+`pure` Used in Functions Does not read anything in the Blockchain
+`view` Used in Functions,Reads data in the Blockchain
+`payable` Allows users to receive Ether whenbeing called. 
