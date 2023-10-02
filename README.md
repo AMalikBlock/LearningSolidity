@@ -54,7 +54,7 @@ function externalFunc() external pure returns (uint) {
 
 ## Constructor
 
-Constructor example [Constructor](https://github.com/AMalikBlock/LearningSolidity/blob/main/4_exampleConstructor.sol).
+> Constructor example [Constructor](https://github.com/AMalikBlock/LearningSolidity/blob/main/4_exampleConstructor.sol).
 
 ## Address
 
@@ -69,14 +69,14 @@ There are two types of `address` types
 
 ## Block and Transaction Properties
 
-msg.sender
-
-msg.sender example [msg.sender](https://github.com/AMalikBlock/LearningSolidity/blob/main/5_exampleMsgSender.sol).
+> msg.sender example [msg.sender](https://github.com/AMalikBlock/LearningSolidity/blob/main/5_exampleMsgSender.sol).
 
 
 
 ## Modifiers
 
-`pure` Used in Functions Does not read anything in the Blockchain
-`view` Used in Functions,Reads data in the Blockchain
-`payable` Allows users to receive Ether whenbeing called. 
+- `pure` Used in Functions Does not read anything in the Blockchain.
+- `view` Used in Functions,Reads data in the Blockchain.
+- `payable` Allows users to receive Ether when being called. 
+
+> view & pure example [View vs Pure](https://github.com/AMalikBlock/LearningSolidity/blob/main/6_viewAndPureExample.sol).
