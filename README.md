@@ -80,3 +80,4 @@ There are two types of `address` types
 - `payable` Allows users to receive Ether when being called. 
 
 > view & pure example [View vs Pure](https://github.com/AMalikBlock/LearningSolidity/blob/main/6_viewAndPureExample.sol).
+> payable example [payable](https://github.com/AMalikBlock/LearningSolidity/blob/main/7_examplePayablePayment.sol).
