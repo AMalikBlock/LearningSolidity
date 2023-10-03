@@ -81,3 +81,8 @@ There are two types of `address` types
 
 > view & pure example [View vs Pure](https://github.com/AMalikBlock/LearningSolidity/blob/main/6_viewAndPureExample.sol).
 > payable example [payable](https://github.com/AMalikBlock/LearningSolidity/blob/main/7_examplePayablePayment.sol).
+
+
+## Mini Project Examples
+
+- Wallet Example, This goes over functions [basicWalletExample](https://github.com/AMalikBlock/LearningSolidity/blob/main/8_basicWallet.sol).
