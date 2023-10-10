@@ -54,7 +54,7 @@ function externalFunc() external pure returns (uint) {
 
 ## Constructor
 
-> Constructor example [Constructor](https://github.com/AMalikBlock/LearningSolidity/blob/main/4_exampleConstructor.sol).
+Constructor example [Constructor](https://github.com/AMalikBlock/LearningSolidity/blob/main/4_exampleConstructor.sol).
 
 ## Address
 
@@ -69,20 +69,39 @@ There are two types of `address` types
 
 ## Block and Transaction Properties
 
-> msg.sender example [msg.sender](https://github.com/AMalikBlock/LearningSolidity/blob/main/5_exampleMsgSender.sol).
+msg.sender
+
+msg.sender example [msg.sender](https://github.com/AMalikBlock/LearningSolidity/blob/main/5_exampleMsgSender.sol).
 
 
 
 ## Modifiers
 
-- `pure` Used in Functions Does not read anything in the Blockchain.
-- `view` Used in Functions,Reads data in the Blockchain.
-- `payable` Allows users to receive Ether when being called. 
+- `pure` Used in Functions Does not read anything in the Blockchain
+- `view` Used in Functions,Reads data in the Blockchain
+- `payable` Allows users to receive Ether whenbeing called. 
 
-> view & pure example [View vs Pure](https://github.com/AMalikBlock/LearningSolidity/blob/main/6_viewAndPureExample.sol).
-> payable example [payable](https://github.com/AMalikBlock/LearningSolidity/blob/main/7_examplePayablePayment.sol).
+e.g 
 
+## Mapping
 
-## Mini Project Examples
+Basic formular on how to use mapping 
+`mapping(uint => string) public name;`
 
-- Wallet Example, This goes over functions [basicWalletExample](https://github.com/AMalikBlock/LearningSolidity/blob/main/8_basicWallet.sol).
+```Solidity
+
+    mapping(uint => film) public films;
+
+    struct film {
+        string title;
+        string genre;
+        uint rating;
+    }
+
+    function addfilms(uint _id, string memory _title, string memory _genre, uint _rating ) public {
+        films[_id] = film(_title, _genre, _rating); 
+    }
+
+```
+
+Mapping example [Mapping](https://github.com/AMalikBlock/LearningSolidity/blob/main/9_exampleMapping.sol).
