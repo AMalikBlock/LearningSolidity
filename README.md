@@ -90,6 +90,10 @@ Basic formular on how to use mapping
 
 ```Solidity
 
+     /* Mapping e.g - rule
+    mapping(key => value) public myMapping; 
+    */
+    
     mapping(uint => film) public films;
 
     struct film {
